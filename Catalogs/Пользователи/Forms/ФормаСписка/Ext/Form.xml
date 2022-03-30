@@ -303,6 +303,11 @@
 					<ContextMenu name="ПользователиПоискУправлениеКонтекстноеМеню" id="323"/>
 					<ExtendedTooltip name="ПользователиПоискУправлениеРасширеннаяПодсказка" id="324"/>
 				</SearchControlAddition>
+				<Button name="ФормаПоказатьСлужебногоПользователя" id="325">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПоказатьСлужебногоПользователя</CommandName>
+					<ExtendedTooltip name="ФормаПоказатьСлужебногоПользователяРасширеннаяПодсказка" id="326"/>
+				</Button>
 			</ChildItems>
 		</CommandBar>
 		<UsualGroup name="ГруппаКоманднаяПанельВыбора" id="218">
@@ -1759,6 +1764,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаблокироватьНедействительныхПользователейВСистемеВзаимодействий</Action>
+		</Command>
+		<Command name="ПоказатьСлужебногоПользователя" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать служебного пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать служебного пользователя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСлужебногоПользователя</Action>
 		</Command>
 	</Commands>
 	<Parameters>
