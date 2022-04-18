@@ -39,7 +39,7 @@
 					<v8:content>Кино</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>movie</Comment>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_21</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
@@ -52,8 +52,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.АдминистраторСистемы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
-			<Vendor>NNS</Vendor>
-			<Version>0.0.0.1</Version>
+			<Vendor>Носакин Николай Сергеевич</Vendor>
+			<Version>1.0.1.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -205,10 +205,30 @@
 			<DefaultStyle/>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
-			<DetailedInformation/>
-			<Copyright/>
-			<VendorInformationAddress/>
-			<ConfigurationInformationAddress/>
+			<DetailedInformation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранение списка фильмов, сериалов. Отметка просмотренных фильмов.</v8:content>
+				</v8:item>
+			</DetailedInformation>
+			<Copyright>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Носакин Николай Сергеевич</v8:content>
+				</v8:item>
+			</Copyright>
+			<VendorInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>https://github.com/NikolayNosakin</v8:content>
+				</v8:item>
+			</VendorInformationAddress>
+			<ConfigurationInformationAddress>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>https://github.com/NikolayNosakin/1c_movie_bsp</v8:content>
+				</v8:item>
+			</ConfigurationInformationAddress>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>UseWithWarnings</ModalityUseMode>
@@ -244,6 +264,7 @@
 			<Style>СтильОформленияСерый</Style>
 			<Style>СтильОформленияСиний</Style>
 			<Style>СтильОформленияТемный</Style>
+			<Style>СтильОформленияТемноСерый</Style>
 			<CommonPicture>ВводимыеСимволыВидны</CommonPicture>
 			<CommonPicture>ВводимыеСимволыСкрыты</CommonPicture>
 			<CommonPicture>ВидыОпераций</CommonPicture>
@@ -459,6 +480,8 @@
 			<CommonPicture>СтильОформленияСерый</CommonPicture>
 			<CommonPicture>СтильОформленияСиний</CommonPicture>
 			<CommonPicture>СтильОформленияТемный</CommonPicture>
+			<CommonPicture>СтильОформленияТемноСерый</CommonPicture>
+			<CommonPicture>СинхронизацияДанных</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВыполняетсяОбновлениеИБ</SessionParameter>
@@ -563,6 +586,8 @@
 			<CommonModule>ОбновлениеИнформационнойБазыКино</CommonModule>
 			<CommonModule>ВнешниеПользователи</CommonModule>
 			<CommonModule>ВнешниеПользователиКлиент</CommonModule>
+			<CommonModule>kinopoisk_unofficial_api</CommonModule>
+			<CommonModule>СохранениеВосстановлениеДанныхСервер</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<WebService>InterfaceVersion</WebService>
 			<EventSubscription>ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
@@ -589,6 +614,7 @@
 			<FunctionalOption>СтандартныеПодсистемыВМоделиСервиса</FunctionalOption>
 			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
 			<FunctionalOption>ИспользоватьГруппыВнешнихПользователей</FunctionalOption>
+			<FunctionalOption>ИспользуетсяЗаполнениеИзКинопоискаПоАПИ</FunctionalOption>
 			<DefinedType>Пользователь</DefinedType>
 			<DefinedType>МестоХраненияФункциональныхОпций</DefinedType>
 			<DefinedType>ВнешнийПользователь</DefinedType>
@@ -627,6 +653,8 @@
 			<Constant>УдалитьНастройкиВходаПользователей</Constant>
 			<Constant>ИспользоватьВнешнихПользователей</Constant>
 			<Constant>ИспользоватьГруппыВнешнихПользователей</Constant>
+			<Constant>kinopoisk_unofficial_api_token</Constant>
+			<Constant>ИспользуетсяЗаполнениеИзКинопоискаПоАПИ</Constant>
 			<CommonForm>Вопрос</CommonForm>
 			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
 			<CommonForm>ВопросОбУстановкеРасширенияРаботыСФайлами</CommonForm>
@@ -651,6 +679,7 @@
 			<CommonForm>СменаПароля</CommonForm>
 			<CommonForm>СравнениеТабличныхДокументов</CommonForm>
 			<CommonForm>СменитьСтиль</CommonForm>
+			<CommonForm>Настройки</CommonForm>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
 			<Catalog>ИдентификаторыОбъектовМетаданных</Catalog>
@@ -667,7 +696,7 @@
 			<Enum>СтатусыОбработчиковОбновления</Enum>
 			<Enum>ТипыДанныхКэшаПрограммныхИнтерфейсов</Enum>
 			<Enum>ФорматыСохраненияОтчетов</Enum>
-			<Enum>ТипКино</Enum>
+			<Enum>ТипыКино</Enum>
 			<Report>ПрогрессОтложенногоОбновления</Report>
 			<Report>СведенияОПользователях</Report>
 			<DataProcessor>ЖурналРегистрации</DataProcessor>
