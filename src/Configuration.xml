@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Носакин Николай Сергеевич</Vendor>
-			<Version>1.0.1.1</Version>
+			<Version>1.0.1.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -263,8 +263,8 @@
 			<Style>СтильОформленияРозовый</Style>
 			<Style>СтильОформленияСерый</Style>
 			<Style>СтильОформленияСиний</Style>
-			<Style>СтильОформленияТемный</Style>
 			<Style>СтильОформленияТемноСерый</Style>
+			<Style>СтильОформленияЧерный</Style>
 			<CommonPicture>ВводимыеСимволыВидны</CommonPicture>
 			<CommonPicture>ВводимыеСимволыСкрыты</CommonPicture>
 			<CommonPicture>ВидыОпераций</CommonPicture>
@@ -479,9 +479,10 @@
 			<CommonPicture>СтильОформленияРозовый</CommonPicture>
 			<CommonPicture>СтильОформленияСерый</CommonPicture>
 			<CommonPicture>СтильОформленияСиний</CommonPicture>
-			<CommonPicture>СтильОформленияТемный</CommonPicture>
+			<CommonPicture>СтильОформленияЧерный</CommonPicture>
 			<CommonPicture>СтильОформленияТемноСерый</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
+			<CommonPicture>Глаз</CommonPicture>
 			<SessionParameter>АвторизованныйПользователь</SessionParameter>
 			<SessionParameter>БуферОбмена</SessionParameter>
 			<SessionParameter>ВыполняетсяОбновлениеИБ</SessionParameter>
@@ -519,12 +520,15 @@
 			<Role>ЧтениеВнешнихПользователей</Role>
 			<CommonTemplate>ПолучениеДереваОбработчиковОбновления</CommonTemplate>
 			<CommonTemplate>ОписаниеИзмененийСистемы</CommonTemplate>
+			<CommonModule>kinopoisk_unofficial_api</CommonModule>
 			<CommonModule>АдминистрированиеКластера</CommonModule>
 			<CommonModule>АдминистрированиеКластераCOM</CommonModule>
-			<CommonModule>АдминистрированиеКластераRASКлиентСервер</CommonModule>
-			<CommonModule>АдминистрированиеКластераКлиентСервер</CommonModule>
 			<CommonModule>АдминистрированиеКластераCOMКлиентСервер</CommonModule>
 			<CommonModule>АдминистрированиеКластераRAS</CommonModule>
+			<CommonModule>АдминистрированиеКластераRASКлиентСервер</CommonModule>
+			<CommonModule>АдминистрированиеКластераКлиентСервер</CommonModule>
+			<CommonModule>ВнешниеПользователи</CommonModule>
+			<CommonModule>ВнешниеПользователиКлиент</CommonModule>
 			<CommonModule>ДлительныеОперации</CommonModule>
 			<CommonModule>ДлительныеОперацииВызовСервера</CommonModule>
 			<CommonModule>ДлительныеОперацииГлобальный</CommonModule>
@@ -540,6 +544,7 @@
 			<CommonModule>ОбновлениеИнформационнойБазыБСП</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыГлобальный</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыКино</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыКлиент</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыКлиентПереопределяемый</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыПереопределяемый</CommonModule>
@@ -567,6 +572,7 @@
 			<CommonModule>ПользователиСлужебныйПовтИсп</CommonModule>
 			<CommonModule>РегламентированныеДанныеКлиентСервер</CommonModule>
 			<CommonModule>РегламентныеЗаданияСервер</CommonModule>
+			<CommonModule>СохранениеВосстановлениеДанныхСервер</CommonModule>
 			<CommonModule>СтандартныеПодсистемыВызовСервера</CommonModule>
 			<CommonModule>СтандартныеПодсистемыГлобальный</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиент</CommonModule>
@@ -583,11 +589,7 @@
 			<CommonModule>ФайловаяСистемаСлужебныйКлиент</CommonModule>
 			<CommonModule>ФайловаяСистемаСлужебныйКлиентСервер</CommonModule>
 			<CommonModule>ФизическиеЛицаКлиентСервер</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыКино</CommonModule>
-			<CommonModule>ВнешниеПользователи</CommonModule>
-			<CommonModule>ВнешниеПользователиКлиент</CommonModule>
-			<CommonModule>kinopoisk_unofficial_api</CommonModule>
-			<CommonModule>СохранениеВосстановлениеДанныхСервер</CommonModule>
+			<CommonModule>ЯндексДискОбменДанными</CommonModule>
 			<ExchangePlan>ОбновлениеИнформационнойБазы</ExchangePlan>
 			<WebService>InterfaceVersion</WebService>
 			<EventSubscription>ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
@@ -615,6 +617,7 @@
 			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
 			<FunctionalOption>ИспользоватьГруппыВнешнихПользователей</FunctionalOption>
 			<FunctionalOption>ИспользуетсяЗаполнениеИзКинопоискаПоАПИ</FunctionalOption>
+			<FunctionalOption>СкрыватьПросмотренныеСерии</FunctionalOption>
 			<DefinedType>Пользователь</DefinedType>
 			<DefinedType>МестоХраненияФункциональныхОпций</DefinedType>
 			<DefinedType>ВнешнийПользователь</DefinedType>
@@ -629,9 +632,9 @@
 			<CommonCommand>УстановитьРасширениеДляРаботыС1СПредприятием</CommonCommand>
 			<CommandGroup>Информация</CommandGroup>
 			<CommandGroup>Органайзер</CommandGroup>
+			<Constant>kinopoisk_unofficial_api_token</Constant>
 			<Constant>АдресПубликацииИнформационнойБазыВИнтернете</Constant>
 			<Constant>ДетализироватьОбновлениеИБВЖурналеРегистрации</Constant>
-			<Constant>ГлавныйУзел</Constant>
 			<Constant>ИдентификаторИнформационнойБазы</Constant>
 			<Constant>АдресПубликацииИнформационнойБазыВЛокальнойСети</Constant>
 			<Constant>ЗаголовокСистемы</Constant>
@@ -653,10 +656,17 @@
 			<Constant>УдалитьНастройкиВходаПользователей</Constant>
 			<Constant>ИспользоватьВнешнихПользователей</Constant>
 			<Constant>ИспользоватьГруппыВнешнихПользователей</Constant>
-			<Constant>kinopoisk_unofficial_api_token</Constant>
+			<Constant>ГлавныйУзел</Constant>
 			<Constant>ИспользуетсяЗаполнениеИзКинопоискаПоАПИ</Constant>
+			<Constant>ЯД_ID_Приложения</Constant>
+			<Constant>ЯД_КодАвторизации</Constant>
+			<Constant>ЯД_ПарольПриложения</Constant>
+			<Constant>ЯД_СрокДействияТокена</Constant>
+			<Constant>ЯД_Токен</Constant>
+			<Constant>РезервноеКопированиеНаЯндексДиск</Constant>
+			<Constant>СкрыватьПросмотренныеСерии</Constant>
+			<CommonForm>Настройки</CommonForm>
 			<CommonForm>Вопрос</CommonForm>
-			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
 			<CommonForm>ВопросОбУстановкеРасширенияРаботыСФайлами</CommonForm>
 			<CommonForm>ВосстановлениеПаролей</CommonForm>
 			<CommonForm>ВосстановлениеСвязиСГлавнымУзлом</CommonForm>
@@ -679,7 +689,8 @@
 			<CommonForm>СменаПароля</CommonForm>
 			<CommonForm>СравнениеТабличныхДокументов</CommonForm>
 			<CommonForm>СменитьСтиль</CommonForm>
-			<CommonForm>Настройки</CommonForm>
+			<CommonForm>ВопросОбУстановкеВнешнейКомпоненты</CommonForm>
+			<CommonForm>ЯДФормаАвторизации</CommonForm>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
 			<Catalog>ИдентификаторыОбъектовМетаданных</Catalog>
